@@ -1,22 +1,22 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ShieldInteractController : MonoBehaviour
+public class InteractController : MonoBehaviour
 {
-    public GameObject ShieldBubble;
+    public GameObject DemoEffect;
     private bool isActive = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public void InteractShield()
+    public void Interact()
     {
         if(!isActive)
         {
             isActive = true;
-            ShieldBubble.gameObject.SetActive(true);
+            DemoEffect.gameObject.SetActive(true);
         }
         else
         {
             isActive = false;
-            ShieldBubble.gameObject.SetActive(false);
+            DemoEffect.gameObject.SetActive(false);
         }
     }
 }
